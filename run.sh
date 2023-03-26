@@ -1,5 +1,5 @@
 #!/bin/bash
-docker run \
+docker run -d \
 -e http_proxy=${http_proxy} \
 -e https_proxy=${https_proxy} \
 -e HTTP_PROXY=${HTTP_PROXY} \
