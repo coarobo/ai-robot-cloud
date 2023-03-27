@@ -28,9 +28,7 @@ RUN cd /tmp && \
 # 必要なファイルのコピー
 COPY rootfs /
 
-# XvfbからXorgに書き換え
-RUN sed -i  "s|^exec |#exec |" /usr/local/bin/xvfb.sh \
-    && echo "/usr/bin/Xorg :1" >> /usr/local/bin/xvfb.sh
+echo "sh /usr/local/bin/xrandr_exec.sh" >> /home/ubuntu/.bashrc
 
 ENTRYPOINT ["/startup_nvidia.sh" ]
 
