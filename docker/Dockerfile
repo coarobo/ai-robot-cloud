@@ -28,7 +28,8 @@ RUN cd /tmp && \
 # 必要なファイルのコピー
 COPY rootfs /
 
-echo "sh /usr/local/bin/xrandr_exec.sh" >> /home/ubuntu/.bashrc
+# 解像度の反映コマンド
+RUN echo "sh /usr/local/bin/xrandr_exec.sh" >> /home/ubuntu/.bashrc
 
 ENTRYPOINT ["/startup_nvidia.sh" ]
 
