@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/coarobo/workspaces/ai-robot-book/ai-robot-desktop/ai-robot-image:latest:latest
+FROM registry.gitlab.com/coarobo/workspaces/ai-robot-book/ai-robot-desktop/ai-robot-image:latest
 
 ENV DEBIAN_FRONTEND=noninteractive
 
