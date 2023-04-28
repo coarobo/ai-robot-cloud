@@ -1,4 +1,4 @@
-FROM airobotbook/ros2-desktop-ai-robot-book:latest
+FROM registry.gitlab.com/coarobo/workspaces/ai-robot-book/ai-robot-desktop/ai-robot-image:latest:latest
 
 ENV DEBIAN_FRONTEND=noninteractive
 

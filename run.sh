@@ -12,11 +12,11 @@ docker run -d \
 -e PULSE_SERVER=unix:/tmp/pulse/native \
 -v /run/user/$(id -u)/pulse/native:/tmp/pulse/native \
 -v ~/.config/pulse/cookie:/tmp/pulse/cookie:ro \
---name ai_robot_book_nvidia \
+--name ai_robot_cloud \
 -p 5900:5900 \
 -p 6080:80 \
 --shm-size=512m \
 --privileged \
 --mount type=bind,src=${HOST_WS_DIR},dst=${CONTAINER_WS_DIR} \
 $* \
-airobotbook/ros2-desktop-ai-robot-book-nvidia:latest
+registry.gitlab.com/coarobo/workspaces/ai-robot-book/ai-robot-cloud:latest
