@@ -1,5 +1,5 @@
 #!/bin/bash
-HOST_WS_DIR=/home/ubuntu/catkin_ws/src/ros2-desktop-nvidia/user
+HOST_WS_DIR=/home/ubuntu/catkin_ws/src/ai-robot-cloud/user
 CONTAINER_WS_DIR=/home/ubuntu/Desktop/user
 
 docker run -d \
