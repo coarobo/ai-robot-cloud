@@ -1,6 +1,6 @@
 #!/bin/bash
 HOST_WS_DIR=/home/ubuntu/catkin_ws/src/ai-robot-cloud/user
-CONTAINER_WS_DIR=/home/ubuntu/Desktop/user
+CONTAINER_WS_DIR=/home/ubuntu/user
 
 docker run -d \
 -e http_proxy=${http_proxy} \
