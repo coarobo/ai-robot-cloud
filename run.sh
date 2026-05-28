@@ -19,4 +19,4 @@ docker run -d \
 --privileged \
 --mount type=bind,src=${HOST_WS_DIR},dst=${CONTAINER_WS_DIR} \
 $* \
-registry.gitlab.com/coarobo/workspaces/ai-robot-book/ai-robot-cloud:latest
+registry.gitlab.com/coarobo/panasonic/ai-robot-cloud:latest
